@@ -1,0 +1,43 @@
+<robot
+  name="robotiq_arg85_description">
+  <link
+    name="tool_link">
+    <inertial>
+      <origin
+        xyz="5.71609771160645E-07 0.000946761157269248 0.056894946642715"
+        rpy="0 0 0" />
+      <mass
+        value="0.42879427891986" />
+      <inertia
+        ixx="0.000880051557317243"
+        ixy="4.03284279859283E-09"
+        ixz="-1.46541187954161E-08"
+        iyy="0.000715516395877899"
+        iyz="-1.9823044769061E-05"
+        izz="0.000390642046719696" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_arg85_description/meshes/tool_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.811764705882353 0.250980392156863 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_arg85_description/meshes/tool_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

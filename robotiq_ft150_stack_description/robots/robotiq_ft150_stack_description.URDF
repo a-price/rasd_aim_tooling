@@ -1,0 +1,58 @@
+<robot
+  name="robotiq_ft150_stack_description">
+  <link
+    name="stack">
+    <inertial>
+      <origin
+        xyz="0.000446897624380717 0.000886416907557358 0.0322238748986599"
+        rpy="0 0 0" />
+      <mass
+        value="0.733422847628387" />
+      <inertia
+        ixx="0.000992352067246208"
+        ixy="-9.87352425483295E-06"
+        ixz="1.82028313918534E-05"
+        iyy="0.000925262583942549"
+        iyz="-2.39728911500565E-05"
+        izz="0.00113130103496341" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_ft150_stack_description/meshes/stack_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotiq_ft150_stack_description/meshes/stack_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="tool_changer" />
+  <joint
+    name="stack"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0918281250000001"
+      rpy="-2.79734410692062E-17 4.57380650403684E-16 -2.35619376092503" />
+    <parent
+      link="stack" />
+    <child
+      link="tool_changer" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

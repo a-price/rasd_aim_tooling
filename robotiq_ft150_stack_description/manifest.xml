@@ -1,0 +1,6 @@
+<package>
+  <description brief="robotiq_ft150_stack_description">robotiq_ft150_stack_description</description>
+  <depend package="gazebo" />
+  <author>me</author>
+  <license>BSD</license>
+</package>
